@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="author"
+      content="Laney, R. Brendan (web-developer & engineer)"
+    />
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/css/uikit.min.css"
+    />
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+    <title>Django-app</title>
+    <link rel="shortcut icon" type="image/png" href="#" />
+  </head>
+
+  <body>
+    <!-- Navbar - top of page -->
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <span
+          id="brand"
+          class="uk-icon uk-margin-left uk-text-emphasis"
+          uk-icon="icon: play-circle; ratio: 1.5"
+        ></span>
+        <a
+          id="brand"
+          class="uk-navbar-item uk-logo uk-text-bold uk-text-emphasis"
+          href="{% url 'pages:index' %}"
+        >
+          Home
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul id="element" class="uk-navbar-nav">
+          <li class="uk-active">
+            <a
+              class="uk-icon uk-margin-small-right"
+              href="{% url 'pages:index' %}"
+              uk-icon="home"
+            ></a>
+          </li>
+          <li class="uk-*">
+            <a
+              class="uk-icon uk-margin-small-right"
+              href="#"              
+              uk-icon="mail"
+            ></a>
+          </li>
+          <li class="uk-*">
+            <a
+              class="uk-icon uk-margin-small-right"
+              href="#"
+              uk-icon="info"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Site header -->
+    <div class="uk-flex uk-flex-center">
+      <div>{% block title %}{% endblock %}</div>
+    </div>
+    <!-- End header -->
+
+    <!-- Main div content -->
+    <div id="main" class="uk-container uk-container-large">
+      <!-- Define region for cascading templates that inherit this html -->
+      {% block content %}{% endblock %}
+    </div>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>

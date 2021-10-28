@@ -1,0 +1,25 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+  <h1 class="uk-heading-large">Django & UiKit</h1>
+  <h3 class="uk-heading-line uk-text-center">
+    <span>A sample web application</span>
+  </h3>
+{% endblock %}
+
+{% block content %}
+<div class="uk-flex uk-flex-center">
+  {% for location in locations %}
+    <div id="index-card" class="uk-card uk-card-hover">
+      <div class="uk-card-header">
+        Stuff goes here
+        <!-- <h2 class="uk-card-title">{{ location.city }}, {{location.state}}</h2> -->
+      </div>
+      <div class="uk-card-footer">
+        Link goes here
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

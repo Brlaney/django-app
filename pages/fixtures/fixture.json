@@ -1,0 +1,152 @@
+[
+  {
+    "model": "datasets.location",
+    "pk": 1,
+    "fields": {
+        "city": "Knoxville",
+        "state": "Tennessee",
+        "abbr": "TN",
+        "image": "Knoxville-tn.jpg"
+    }
+  },
+  {
+    "model": "datasets.location",
+    "pk": 2,
+    "fields": {
+        "city": "Chattanooga",
+        "state": "Tennessee",
+        "abbr": "TN",
+        "image": "Chattanooga-tn.jpg"
+    }
+  },
+  {
+    "model": "datasets.location",
+    "pk": 3,
+    "fields": {
+        "city": "Sedona",
+        "state": "Arizona",
+        "abbr": "AZ",
+        "image": "Sedona-az.jpg"
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 1,
+    "fields": {
+      "title": "Biking",
+      "rows": 13,
+      "slug": "knoxville-tweets-containing-the-keyword-biking",
+      "location": 1
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 2,
+    "fields": {
+      "title": "Hiking",
+      "rows": 178,
+      "slug": "knoxville-tweets-containing-the-keyword-hiking",
+      "location": 1
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 3,
+    "fields": {
+      "title": "Marketing",
+      "rows": 379,
+      "slug": "knoxville-tweets-containing-the-keyword-marketing",
+      "location": 1
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 4,
+    "fields": {
+      "title": "Outdoors",
+      "rows": 137,
+      "slug": "knoxville-tweets-containing-the-keyword-outdoors",
+      "location": 1
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 5,
+    "fields": {
+      "title": "Biking",
+      "rows": 45,
+      "slug": "chattanooga-tweets-containing-the-keyword-biking",
+      "location": 2
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 6,
+    "fields": {
+      "title": "Hiking",
+      "rows": 359,
+      "slug": "chattanooga-tweets-containing-the-keyword-hiking",
+      "location": 2
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 7,
+    "fields": {
+      "title": "Marketing",
+      "rows": 4065,
+      "slug": "chattanooga-tweets-containing-the-keyword-marketing",
+      "location": 2
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 8,
+    "fields": {
+      "title": "Outdoors",
+      "rows": 454,
+      "slug": "chattanooga-tweets-containing-the-keyword-outdoors",
+      "location": 2
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 9,
+    "fields": {
+      "title": "Biking",
+      "rows": 14,
+      "slug": "sedona-tweets-containing-the-keyword-biking",
+      "location": 3
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 10,
+    "fields": {
+      "title": "Hiking",
+      "rows": 64,
+      "slug": "sedona-tweets-containing-the-keyword-hiking",
+      "location": 3
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 11,
+    "fields": {
+      "title": "Marketing",
+      "rows": 33,
+      "slug": "sedona-tweets-containing-the-keyword-marketing",
+      "location": 3
+    }
+  },
+  {
+    "model": "datasets.dataset",
+    "pk": 12,
+    "fields": {
+      "title": "Outdoors",
+      "rows": 9,
+      "slug": "sedona-tweets-containing-the-keyword-outdoors",
+      "location": 3
+    }
+  }
+]
